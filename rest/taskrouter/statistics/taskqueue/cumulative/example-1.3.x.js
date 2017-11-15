@@ -9,7 +9,11 @@ const client = require('twilio')(accountSid, authToken);
 client.taskrouter.v1
   .workspaces(workspaceSid)
   .taskQueues(taskQueueSid)
+<<<<<<< HEAD
   .cumulativeStatistics()
+=======
+  .taskQueueCumulativeStatistics()
+>>>>>>> 10bc3b138746fb561243d1847c01e0fd96edbadc
   .fetch()
   .then(responseData => {
     console.log(responseData.reservations_accepted);
